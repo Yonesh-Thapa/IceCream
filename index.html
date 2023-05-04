@@ -16,7 +16,7 @@
         <!-- writing the paramater in comment so i can reference the Id to include in html. -->
         <!-- numOfScoops, sprinkles, whippedCream, hotFudge, cherry -->
         <legend>
-            <h2>Welcome to Ice Cream Shop</h2>
+            <h2>Welcome to Ice Cream Shop</h2> 
         </legend>
         <div>
             <label>
@@ -32,9 +32,18 @@
                 <legend>
                     <h4>Toppings</h4>
                 </legend>
+                <input type="checkbox" id="sprinkles">
+                Sprinkles ($0.50)
+                <input type="checkbox" id="whippedCream"> Whipped Cream($0.25)<br>
+                <input type="checkbox" id="hotFudge" value="hotFudge"> Hot Fudge ($1.25) 
+                <input type="checkbox" id="cherry" value="cherry"> Cherry ($0.25)
+
+                
             </fieldset>
+            <input type="button" id="submitBtn" value="Submit Order" 
         </div>
     </fieldset>
 </body>
-
+<script src="price.js"></script>
+<scritp src="main.js"></scritp>
 </html>

@@ -26,7 +26,7 @@ function icreamCost(numOfScoops, sprinkles, whippedCream, hotFudge, cherry) {
   let salesTax = .0875;
   let subTotalCost =
     price_per_scoop +
-    1.25 * numOfScoops +
+    1.25 * numOfScoops + //additional scoop price
     sprinklesCost +
     whippedCreamCost +
     hotFudgeCost +
