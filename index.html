@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+         input[type="radio"] + label {margin-left: 10px;}
+    </style> -->
+</head>
+
+<body>
+    <fieldset>
+        <!-- writing the paramater in comment so i can reference the Id to include in html. -->
+        <!-- numOfScoops, sprinkles, whippedCream, hotFudge, cherry -->
+        <legend>
+            <h2>Welcome to Ice Cream Shop</h2>
+        </legend>
+        <div>
+            <label>
+                Number of Scoops <input id="numOfScoops" type="number" min="1" max="4">
+
+            </label><br>
+
+            <input type="radio" id="cone" value="cone" name="cone">
+            <label for="cone">Cone</label>
+            <input type="radio" id="cup" value="cup" name="cup">
+            <label for="cup">Cup</label><br>
+            <fieldset>
+                <legend>
+                    <h4>Toppings</h4>
+                </legend>
+            </fieldset>
+        </div>
+    </fieldset>
+</body>
+
+</html>
