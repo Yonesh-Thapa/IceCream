@@ -1,6 +1,11 @@
 // step 3. Putting the calculations in a function and 
 //adding all the parameter that is going to be passed into it.
 
+
+//  all the id used numOfScoops, sprinkles, whippedCream, hotFudge,chery,
+//  output 
+
+
 function icreamCost(numOfScoops, sprinkles, whippedCream, hotFudge, cherry) {
   // doing calculations first. step 1
   let sprinklesCost = 0;
@@ -34,13 +39,23 @@ function icreamCost(numOfScoops, sprinkles, whippedCream, hotFudge, cherry) {
   let taxCost = subTotalCost * salesTax;
   let totalcost = subTotalCost + (taxCost);
 
-  console.log(`
-  Base Price: $${subTotalCost.toFixed(2)}
-  Tax:        $${taxCost.toFixed(2)}
-  Total Due:  $${totalcost.toFixed(2)}
-  `);
+  return{
+    subTotalCost: subTotalCost,
+    taxCost: taxCost,
+    totalcost: totalcost
+  }
+
+  
 }
+function textResults(results){
+  return`
+Base Price: $${results.subTotalCost.toFixed(2)}
+Tax:        $${results.taxCost.toFixed(2)}
+Total Due:  $${results.totalcost.toFixed(2)}
+`;
+}
+
 
 // step 4. testing calculations
 
-icreamCost(4, true, true, false, true);
+//console.log(icreamCost(4, true, true, false, true));
