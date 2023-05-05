@@ -2,19 +2,20 @@
 .fieldset1{
     width:fit-content;
     /* min-width: 50vw; */
-    margin:auto;
+    
     border-radius: 1rem;
     box-shadow: #333741 5px 5px;
     background-color: white;
-    margin-top:5rem;
+    margin-top: 5rem;
+
 
 }
 
 .button{
     margin: 2rem 7rem 2rem 7rem;
     border-radius: 0.3rem;
-    font-size: 16px;
-    margin:
+    font-size: 20px;
+    border-style: groove;
 }
 body{
     background-image:linear-gradient(#cfcfcf, #89cff0);
@@ -28,4 +29,24 @@ h2{
 }
 input{
     margin-bottom: 1rem;
+}
+.button:hover{
+    color:black;
+    background-color: #cfcfcf;
+    border-color:#89cff0;
+    border-style: groove;
+}
+img{
+    width:358px;
+    height: 340px;
+    border-radius: 1rem;
+    margin-top: 5rem;
+}
+.content div{
+    display: inline-block;
+    margin:auto;
+}
+.content{
+    width:fit-content;
+    margin:auto;
 }

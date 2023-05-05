@@ -14,69 +14,76 @@
 </head>
 
 <body>
-    <fieldset class="fieldset1">
-        <!-- writing the paramater in comment so i can reference the Id to include in html. -->
-        <!-- numOfScoops, sprinkles, whippedCream, hotFudge, cherry -->
-        
-            <h2>Welcome to Ice Cream Shop</h2>
-        
+    <div class="content">
+        <!-- <div>
+            <img src="iceCream.avif" alt="Ice Cream Image" class="responsive">
+        </div> -->
         <div>
-            <label>
-                Number of Scoops <input id="numOfScoops" type="number" value="1" min="1" max="4">
+            <fieldset class="fieldset1">
+                <!-- writing the paramater in comment so i can reference the Id to include in html. -->
+                <!-- numOfScoops, sprinkles, whippedCream, hotFudge, cherry -->
 
-            </label><br>
+                <h2>Welcome to Ice Cream Shop</h2>
 
-            <input type="radio" id="cone" value="cone" name="display" checked>
-            <label for="cone">Cone</label>
-            <input type="radio" id="cup" value="cup" name="display">
-            <label for="cup">Cup</label><br>
-            <fieldset id="toppings" style="display:none">
-                <legend>
-                    <h4>Toppings</h4>
-                </legend>
-                <label>
-                    <input type="checkbox" id="sprinkles">Sprinkles ($0.50)
-                </label>
-                <label>
-                    <input type="checkbox" id="whippedCream"> Whipped Cream($0.25)<br>
-                </label>
-                <label>
-                    <input type="checkbox" id="hotFudge" value="hotFudge"> Hot Fudge ($1.25)
-                </label>
-                <label>
-                    <input type="checkbox" id="cherry" value="cherry"> Cherry ($0.25)
-                </label>
+                <div>
+                    <label>
+                        Number of Scoops <input id="numOfScoops" type="number" value="1" min="1" max="4">
+
+                    </label><br>
+
+                    <input type="radio" id="cone" value="cone" name="display" checked>
+                    <label for="cone">Cone</label>
+                    <input type="radio" id="cup" value="cup" name="display">
+                    <label for="cup">Cup</label><br>
+                    <fieldset id="toppings" style="display:none">
+                        <legend>
+                            <h4>Toppings</h4>
+                        </legend>
+                        <label>
+                            <input type="checkbox" id="sprinkles">Sprinkles ($0.50)
+                        </label>
+                        <label>
+                            <input type="checkbox" id="whippedCream"> Whipped Cream($0.25)<br>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="hotFudge" value="hotFudge"> Hot Fudge ($1.25)
+                        </label>
+                        <label>
+                            <input type="checkbox" id="cherry" value="cherry"> Cherry ($0.25)
+                        </label>
 
 
+                    </fieldset>
+                    <label>
+                        <input class="button" type="button" id="submitBtn" value="Submit Order">
+                    </label>
+                    <table>
+                        <tr>
+                            <td>Base Price</td>
+                            <td id="pricePerScoop" value="$0.00">$2.25</td>
+                        </tr>
+                        <tr>
+                            <td>Toppings Price</td>
+                            <td id="toppingPrice" value="$0.00">$0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td id="subtotal" value="$0.00">$2.25</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td id="tax" value="$0.00">$0.19</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td id="total" value="$0.00">$2.44</td>
+                        </tr>
+                    </table>
+                    <!-- <p id="output"></p> -->
+                </div>
             </fieldset>
-            <label>
-                <input class="button" type="button" id="submitBtn" value="Submit Order">
-            </label>
-            <table>
-                <tr>
-                    <td>Base Price</td>
-                    <td id="pricePerScoop" value="$0.00"></td>
-                </tr>
-                <tr>
-                    <td>Toppings Price</td>
-                    <td id="toppingPrice" value="$0.00"></td>
-                </tr>
-                <tr>
-                    <td>Subtotal</td>
-                    <td id="subtotal" value="$0.00"></td>
-                </tr>
-                <tr>
-                    <td>Tax</td>
-                    <td id="tax" value="$0.00"></td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td id="total"value="$0.00" ></td>
-                </tr>
-            </table>
-            <!-- <p id="output"></p> -->
         </div>
-    </fieldset>
+    </div>
 </body>
 <script src="price.js"></script>
 <script src="main.js"></script>
