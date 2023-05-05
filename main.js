@@ -54,10 +54,16 @@ document.addEventListener("DOMContentLoaded", () => {
     total.innerHTML = textResults(results.totalcost);
 
   }
+
   submitBtn.addEventListener("click", recalculate);
+  sprinkles.addEventListener("change", recalculate);
+  sprinkles.addEventListener("input", recalculate);
   hotFudge.addEventListener("change", recalculate);
+  hotFudge.addEventListener("input",recalculate);
   whippedCream.addEventListener("change", recalculate);
+  whippedCream.addEventListener("input", recalculate);
   cherry.addEventListener("change", recalculate);
+  cherry.addEventListener("input", recalculate);
   numOfScoops.addEventListener("input",recalculate);
   numOfScoops.addEventListener("change",recalculate);
 
