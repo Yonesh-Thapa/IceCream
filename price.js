@@ -45,7 +45,8 @@ function icreamCost(numOfScoops, sprinkles, whippedCream, hotFudge, cherry) {
       hotFudgeCost +
       cherryCost;
   }
-  let toppingPrice = sprinklesCost + whippedCreamCost + hotFudgeCost + cherryCost;
+  let toppingPrice =
+    sprinklesCost + whippedCreamCost + hotFudgeCost + cherryCost;
 
   let taxCost = subTotalCost * salesTax;
   let totalcost = subTotalCost + taxCost;
@@ -54,26 +55,24 @@ function icreamCost(numOfScoops, sprinkles, whippedCream, hotFudge, cherry) {
     subTotalCost: subTotalCost,
     taxCost: taxCost,
     totalcost: totalcost,
-    price_per_scoop:price_per_scoop,
-    toppingPrice:toppingPrice
-
+    price_per_scoop: price_per_scoop,
+    toppingPrice: toppingPrice,
   };
 }
-function textResults(results) {
-  return `
-$${results.subTotalCost.toFixed(2)}
-$${results.taxCost.toFixed(2)}
-$${results.totalcost.toFixed(2)}
-$${results.price_per_scoop.toFixed(2)}
-$${results.toppingPrice.toFixed(2)}
+function textResults(value) {
+  let text = value.toFixed(2);
+  const prefix = "$";
+  return prefix + text;
 
-`;
+
+  //   return `
+// $${value.toFixed(2)}
+// `;
 }
 
-function onChanged() {
-  toppings.style.display = cup.checked ? "block" : "none";
-}
+
 
 // step 4. testing calculations
 
 //console.log(icreamCost(4, true, true, false, true));
+console.log(textResults(0));

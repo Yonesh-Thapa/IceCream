@@ -15,11 +15,11 @@
 
 <body>
     <div class="content">
-        <!-- <div>
-            <img src="iceCream.avif" alt="Ice Cream Image" class="responsive">
-        </div> -->
         <div>
-            <fieldset class="fieldset1">
+            <img src="iceCream.avif" alt="Ice Cream Image" class="responsive">
+        </div>
+        <div>
+            <div class="fieldset1">
                 <!-- writing the paramater in comment so i can reference the Id to include in html. -->
                 <!-- numOfScoops, sprinkles, whippedCream, hotFudge, cherry -->
 
@@ -57,31 +57,33 @@
                     <label>
                         <input class="button" type="button" id="submitBtn" value="Submit Order">
                     </label>
+                    <p style="text-align:center; font-weight:bold; font-size:large">Press "Submit Order" to see you toal
+                        price.</p>
                     <table>
                         <tr>
-                            <td>Base Price</td>
+                            <th>Base Price</th>
                             <td id="pricePerScoop" value="$0.00">$2.25</td>
                         </tr>
                         <tr>
-                            <td>Toppings Price</td>
+                            <th>Toppings Price</th>
                             <td id="toppingPrice" value="$0.00">$0.00</td>
                         </tr>
                         <tr>
-                            <td>Subtotal</td>
+                            <th>Subtotal</th>
                             <td id="subtotal" value="$0.00">$2.25</td>
                         </tr>
                         <tr>
-                            <td>Tax</td>
+                            <th>Tax</th>
                             <td id="tax" value="$0.00">$0.19</td>
                         </tr>
                         <tr>
-                            <td>Total</td>
+                            <th>Total</th>
                             <td id="total" value="$0.00">$2.44</td>
                         </tr>
                     </table>
                     <!-- <p id="output"></p> -->
                 </div>
-            </fieldset>
+            </div>
         </div>
     </div>
 </body>
