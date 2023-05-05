@@ -1,7 +1,31 @@
 
-fieldset{
+.fieldset1{
     width:fit-content;
-    max-width: 40px;
+    /* min-width: 50vw; */
     margin:auto;
+    border-radius: 1rem;
+    box-shadow: #333741 5px 5px;
+    background-color: white;
+    margin-top:5rem;
 
+}
+
+.button{
+    margin: 2rem 7rem 2rem 7rem;
+    border-radius: 0.3rem;
+    font-size: 16px;
+    margin:
+}
+body{
+    background-image:linear-gradient(#cfcfcf, #89cff0);
+    min-height: 100vw;
+}
+h2{
+    text-align: center;
+}
+#toppings{
+    border-radius:1rem;
+}
+input{
+    margin-bottom: 1rem;
 }

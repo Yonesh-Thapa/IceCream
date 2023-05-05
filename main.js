@@ -12,15 +12,20 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const cup = document.getElementById("cup");
     const pricePerScoop = document.getElementById("pricePerScoop");
     
-    const toppingPrice = document.getElementById("toppingPrice");
+    // const toppingPrice = document.getElementById("toppingPrice");
 
-    const subTotal = document.getElementById("subtotal");
+    // const subTotal = document.getElementById("subtotal");
 
-    const tax = document.getElementById("tax");
+    // const tax = document.getElementById("tax");
 
-    const total = document.getElementById("total");
+    // const total = document.getElementById("total");
 
-    pricePerScoop.innerHTML = icreamCost(pricePerScoop);
+    pricePerScoop.innerHTML = icreamCost(price_Per_Scoop);
+    toppingPrice.innerHTML = icreamCost(toppingPrice);
+    subTotal.innerHTML = icreamCost(subTotal);
+    tax.innerHTML = icreamCost(tax);
+    total.innerHTML = icreamCost(total);
+
 
     // toppings.style.display = none;
    
