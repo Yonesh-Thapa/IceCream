@@ -11,9 +11,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const cone = document.getElementById("cone");
     const cup = document.getElementById("cup");
     // toppings.style.display = none;
-    function onChanged() {
-        toppings.style.display = cup.checked ? "block" : "none";
-      }
+   
     cup.addEventListener("change", onChanged);
     cone.addEventListener("change", onChanged);
 

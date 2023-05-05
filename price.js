@@ -38,7 +38,8 @@ function icreamCost(numOfScoops, sprinkles, whippedCream, hotFudge, cherry) {
   } else {
     subTotalCost =
       price_per_scoop +
-      1.25 * numOfScoops + //additional scoop price
+      //fixed cost of extra scoop for ice cream
+      1.25 * (numOfScoops - 1) + //additional scoop price
       sprinklesCost +
       whippedCreamCost +
       hotFudgeCost +
@@ -61,9 +62,9 @@ Total Due:  $${results.totalcost.toFixed(2)}
 `;
 }
 
-// function onChanged() {
-//   toppings.style.display = cup.checked ? "block" : "none";
-// }
+function onChanged() {
+  toppings.style.display = cup.checked ? "block" : "none";
+}
 
 // step 4. testing calculations
 
