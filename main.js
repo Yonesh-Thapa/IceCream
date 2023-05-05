@@ -10,6 +10,18 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const toppings = document.getElementById("toppings");
     const cone = document.getElementById("cone");
     const cup = document.getElementById("cup");
+    const pricePerScoop = document.getElementById("pricePerScoop");
+    
+    const toppingPrice = document.getElementById("toppingPrice");
+
+    const subTotal = document.getElementById("subtotal");
+
+    const tax = document.getElementById("tax");
+
+    const total = document.getElementById("total");
+
+    pricePerScoop.innerHTML = icreamCost(pricePerScoop);
+
     // toppings.style.display = none;
    
     cup.addEventListener("change", onChanged);
@@ -21,8 +33,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
             sprinkles.checked,
             whippedCream.checked,
             hotFudge.checked,
-            cherry.checked)
-            output.innerHTML = textResults(results);
+            cherry.checked);
+            // output.innerHTML = textResults(results);
+            pricePerScoop.innerHTML = textResults(results.price_per_scoop);
+            toppingPrice.innerHTML = textResults(results.toppingPrice);
+            subTotal.innerHTML = textResults(results.subTotalCost);
+            tax.innerHTML = textResults(results.taxCost);
+            total.innerHTML = textResults(results.totalcost);
+
+
     })
     
 })

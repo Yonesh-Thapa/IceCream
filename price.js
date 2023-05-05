@@ -45,6 +45,8 @@ function icreamCost(numOfScoops, sprinkles, whippedCream, hotFudge, cherry) {
       hotFudgeCost +
       cherryCost;
   }
+  let toppingPrice = sprinklesCost + whippedCreamCost + hotFudgeCost + cherryCost;
+
   let taxCost = subTotalCost * salesTax;
   let totalcost = subTotalCost + taxCost;
 
@@ -52,13 +54,19 @@ function icreamCost(numOfScoops, sprinkles, whippedCream, hotFudge, cherry) {
     subTotalCost: subTotalCost,
     taxCost: taxCost,
     totalcost: totalcost,
+    price_per_scoop:price_per_scoop,
+    toppingPrice:toppingPrice
+
   };
 }
 function textResults(results) {
   return `
-Base Price: $${results.subTotalCost.toFixed(2)}
-Tax:        $${results.taxCost.toFixed(2)}
-Total Due:  $${results.totalcost.toFixed(2)}
+$${results.subTotalCost.toFixed(2)}
+$${results.taxCost.toFixed(2)}
+$${results.totalcost.toFixed(2)}
+$${results.price_per_scoop.toFixed(2)}
+$${results.toppingPrice.toFixed(2)}
+
 `;
 }
 

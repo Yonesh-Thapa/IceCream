@@ -1,3 +1,7 @@
-.toppings{
-    display:none;
+
+fieldset{
+    width:fit-content;
+    max-width: 40px;
+    margin:auto;
+
 }
