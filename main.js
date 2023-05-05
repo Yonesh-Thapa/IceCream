@@ -7,6 +7,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const hotFudge = document.getElementById("hotFudge");
     const cherry = document.getElementById("cherry");
     const output = document.getElementById("output");
+    const toppings = document.getElementById("toppings");
+    const cone = document.getElementById("cone");
+    const cup = document.getElementById("cup");
+    // toppings.style.display = none;
+    function onChanged() {
+        toppings.style.display = cup.checked ? "block" : "none";
+      }
+    cup.addEventListener("change", onChanged);
+    cone.addEventListener("change", onChanged);
 
     submitBtn.addEventListener("click", ()=>{
         const results = icreamCost(

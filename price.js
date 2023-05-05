@@ -1,10 +1,8 @@
-// step 3. Putting the calculations in a function and 
+// step 3. Putting the calculations in a function and
 //adding all the parameter that is going to be passed into it.
 
-
 //  all the id used numOfScoops, sprinkles, whippedCream, hotFudge,chery,
-//  output 
-
+//  output
 
 function icreamCost(numOfScoops, sprinkles, whippedCream, hotFudge, cherry) {
   // doing calculations first. step 1
@@ -28,33 +26,44 @@ function icreamCost(numOfScoops, sprinkles, whippedCream, hotFudge, cherry) {
   }
 
   //calculating the total cost of the ice cream. and logging the value on console step 2
-  let salesTax = .0875;
-  let subTotalCost =
-    price_per_scoop +
-    1.25 * numOfScoops + //additional scoop price
-    sprinklesCost +
-    whippedCreamCost +
-    hotFudgeCost +
-    cherryCost;
+  let salesTax = 0.0875;
+  let subTotalCost;
+  if (numOfScoops == 1) {
+    subTotalCost =
+      price_per_scoop +
+      sprinklesCost +
+      whippedCreamCost +
+      hotFudgeCost +
+      cherryCost;
+  } else {
+    subTotalCost =
+      price_per_scoop +
+      1.25 * numOfScoops + //additional scoop price
+      sprinklesCost +
+      whippedCreamCost +
+      hotFudgeCost +
+      cherryCost;
+  }
   let taxCost = subTotalCost * salesTax;
-  let totalcost = subTotalCost + (taxCost);
+  let totalcost = subTotalCost + taxCost;
 
-  return{
+  return {
     subTotalCost: subTotalCost,
     taxCost: taxCost,
-    totalcost: totalcost
-  }
-
-  
+    totalcost: totalcost,
+  };
 }
-function textResults(results){
-  return`
+function textResults(results) {
+  return `
 Base Price: $${results.subTotalCost.toFixed(2)}
 Tax:        $${results.taxCost.toFixed(2)}
 Total Due:  $${results.totalcost.toFixed(2)}
 `;
 }
 
+// function onChanged() {
+//   toppings.style.display = cup.checked ? "block" : "none";
+// }
 
 // step 4. testing calculations
 
