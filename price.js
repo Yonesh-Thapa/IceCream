@@ -28,6 +28,14 @@ function icreamCost(numOfScoops, sprinkles, whippedCream, hotFudge, cherry) {
   //calculating the total cost of the ice cream. and logging the value on console step 2
   let salesTax = 0.0875;
   let subTotalCost;
+  // alternate way
+  // if(iscup){
+  //   price += wantSprinkels ? 0.50 : 0;
+  //   price += wantHotFudge ? 1.23 : 0;
+  //   price += wnatWhippedCream ? 0.25 : 0;
+  //   price += wantsCherry ? 0.25 : 0;
+  // }
+
   if (numOfScoops == 1) {
     subTotalCost =
       price_per_scoop +
